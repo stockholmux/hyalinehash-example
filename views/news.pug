@@ -1,0 +1,21 @@
+html
+  head
+    title News Flash
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous")
+  body
+    .container
+      h1 News Flash
+      if headline1
+        div.well
+          h2= headline1
+          p= summary1
+      if headline2
+        div.well
+          h2= headline2
+          p= summary2
+      if headline3
+        div.well
+          h2= headline3
+          p= summary3
+      
+      a.btn.btn-warning(href="/news-edit") Change the news

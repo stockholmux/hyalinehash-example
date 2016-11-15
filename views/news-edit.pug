@@ -1,0 +1,32 @@
+html
+  head
+    title Top Stories Edit
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous")
+  body
+    .container
+      h1 Edit News
+      form(action="/news-edit" method="post")
+        .form-group
+          label(for="headline1") Headline 1
+          input#headline1.form-control(type="text" placeholder="headline" name="headline1" value= headline1)
+        .form-group
+          label(for="summary1") Summary 1
+          input#summary1.form-control(type="text" placeholder="summary" name="summary1" value= summary1)
+
+        .form-group
+          label(for="headline2") Headline 2
+          input#headline3.form-control(type="text" placeholder="headline" name="headline2" value= headline2)
+        .form-group
+          label(for="summary2") Summary 2
+          input#summary2.form-control(type="text" placeholder="summary" name="summary2" value= summary2)
+
+        .form-group
+          label(for="headline3") Headline 3
+          input#headline3.form-control(type="text" placeholder="headline" name="headline3" value= headline3)
+        .form-group
+          label(for="summary3") Summary 3
+          input#summary3.form-control(type="text" placeholder="summary" name="summary3" value= summary3)
+        
+        button.btn.btn-primary(type="submit") Submit 
+        |  
+        a.btn.btn-default(href="/") View the news
